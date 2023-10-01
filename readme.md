@@ -14,22 +14,10 @@
 - гаплогруппы: `https://raw.githubusercontent.com/aok-buran/HistoricalMapData/master/haplogroups.json`
 - захоронения: `https://raw.githubusercontent.com/aok-buran/HistoricalMapData/master/bodies.tsv`
 
-### Структура файлов
-
-Файл `cities.tsv` хранит данные о городах:
-
-```
-id;startYear;endYear;size;colorR;colorG;colorB;name;longitude;latitude
-c1;5000;7000;5;100;100;80;UNIVISION RADIO STATIONS GROUP, INC.;-80.37889;25.96861
-...
-```
-
-СНачала указывает `id` города, потом первый и последний годы
-периода, когда нужно его отображать `startYear` и `endYear`. Далее указывается размер
-точки, изобрадающий город `size` и её цвет `colorR`, `colorG`, `colorB`. 
-Также необходимо указать название города `name`, его широту и долготу.
+## Структура файлов
 
 
+### Страны
 
 Файл `countries.json` хранит данные о странах:
 
@@ -92,17 +80,23 @@ c1;5000;7000;5;100;100;80;UNIVISION RADIO STATIONS GROUP, INC.;-80.37889;25.9686
 отображения `color`.
 
 
+### Города
 
-Файл `bodies.tsv` хранит данные о гаплогруппах захоронений:
+Файл `cities.tsv` хранит данные о городах:
 
 ```
-id haplogroupId colorR colorG colorB longitude latitude
-h1 H1 80 10 40 -80.77917 28.35333
+id;startYear;endYear;size;colorR;colorG;colorB;name;longitude;latitude
+c1;5000;7000;5;100;100;80;UNIVISION RADIO STATIONS GROUP, INC.;-80.37889;25.96861
 ...
 ```
 
-СНачала указывает `id` захоронения, потом `id` гаплогруппы, дальше 0 три компоненты отображаемого 
-цвета, потом - широта и долгота
+СНачала указывает `id` города, потом первый и последний годы
+периода, когда нужно его отображать `startYear` и `endYear`. Далее указывается размер
+точки, изобрадающий город `size` и её цвет `colorR`, `colorG`, `colorB`.
+Также необходимо указать название города `name`, его широту и долготу.
+
+
+### Гаплогруппа
 
 Файл `haplogroups.json` хранит данные о гаплогруппах:
 
@@ -156,3 +150,16 @@ h1 H1 80 10 40 -80.77917 28.35333
 периода, когда нужно её отображать `startYear` и `endYear`. Также необходимо указать цвет 
 отображения `color`.
 
+### Захоронения
+
+
+Файл `bodies.tsv` хранит данные о гаплогруппах захоронений:
+
+```
+id haplogroupId colorR colorG colorB longitude latitude
+h1 H1 80 10 40 -80.77917 28.35333
+...
+```
+
+СНачала указывает `id` захоронения, потом `id` гаплогруппы, дальше 0 три компоненты отображаемого
+цвета, потом - широта и долгота
