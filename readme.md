@@ -14,10 +14,8 @@
 - гаплогруппы: `https://raw.githubusercontent.com/aok-buran/HistoricalMapData/master/haplogroups.json`
 - захоронения: `https://raw.githubusercontent.com/aok-buran/HistoricalMapData/master/bodies.tsv`
 
-## Структура файлов
 
-
-### Страны
+## Страны
 
 Файл `countries.json` хранит данные о странах:
 
@@ -80,7 +78,7 @@
 отображения `color`.
 
 
-### Города
+## Города
 
 Файл `cities.tsv` хранит данные о городах:
 
@@ -96,7 +94,7 @@ c1;5000;7000;5;100;100;80;UNIVISION RADIO STATIONS GROUP, INC.;-80.37889;25.9686
 Также необходимо указать название города `name`, его широту и долготу.
 
 
-### Гаплогруппа
+## Гаплогруппа
 
 Файл `haplogroups.json` хранит данные о гаплогруппах:
 
@@ -150,7 +148,7 @@ c1;5000;7000;5;100;100;80;UNIVISION RADIO STATIONS GROUP, INC.;-80.37889;25.9686
 периода, когда нужно её отображать `startYear` и `endYear`. Также необходимо указать цвет 
 отображения `color`.
 
-### Захоронения
+## Захоронения
 
 
 Файл `bodies.tsv` хранит данные о гаплогруппах захоронений:
